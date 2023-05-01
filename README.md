@@ -1,2 +1,2 @@
 # Trivy-tutorial
-Killerconda tutorial for Trivy
+Killercoda tutorial for Trivy
