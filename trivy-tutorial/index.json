@@ -4,7 +4,13 @@
   "details": {
     "intro": {
       "text": "intro.md"
-    }
+    },
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1-installTrivy.md"
+      }
+    ]
   },
   "backend": {
     "imageid": "ubuntu"
