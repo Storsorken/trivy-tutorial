@@ -57,6 +57,6 @@ trivy image nginx:1.0
 
 Perform the Trivy configuration scanning of Dockerfile. 
 ```
-trivy config 
+trivy config ./nginx-image
 ```{{exec}}
 
