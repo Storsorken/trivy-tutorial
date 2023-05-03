@@ -28,7 +28,7 @@ Create a Dockerfile in the nginx-image folder
 echo -e "
 FROM ubuntu:18.04  \n
 RUN  apt-get -y update && apt-get -y install nginx \n
-COPY files/default /etc/nginx/sites-available/config.txt \n
+COPY files/config.txt /etc/nginx/sites-available/config.txt \n
 COPY files/index.html /usr/share/nginx/html/index.html \n
 EXPOSE 80 \n
 CMD ['/usr/sbin/nginx", "-g", "daemon off;'] \n
