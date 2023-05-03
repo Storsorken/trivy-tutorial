@@ -21,6 +21,23 @@ server {\n
 " > nginx-image/files/config.txt
 ```{{exec}}
 
+```
+echo -e "
+<html>\n
+  <head>\n
+    <title>Dockerfile</title>\n
+  </head>\n
+  <body>\n
+    <div class='container'>\n
+      <h1>My App</h1>\n
+      <h2>This is my first app</h2>\n
+      <p>Hello everyone, This is running via Docker container</p>\n
+    </div>\n
+  </body>\n
+</html>\n
+" > nginx-image/files/index.html
+```{{exec}}
+
 
 Create a Dockerfile in the nginx-image folder
 
