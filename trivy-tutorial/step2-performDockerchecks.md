@@ -29,7 +29,7 @@ echo -e "
     <title>Dockerfile</title>\n
   </head>\n
   <body>\n
-    <div class="container">\n
+    <div class='container'>\n
       <h1>My App</h1>\n
       <h2>This is my first app</h2>\n
       <p>Hello everyone, This is running via Docker container</p>\n
