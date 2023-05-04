@@ -17,6 +17,10 @@
       {
         "title": "Step 3",
         "text": "basic-vuln-scanning.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "Create DockerImageScanning.md"
       }
     ]
   },
