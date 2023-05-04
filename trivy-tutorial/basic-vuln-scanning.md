@@ -7,14 +7,13 @@ Using Trivy we can scan projects on GitHub for various security issues (some oth
 When doing vulnerability scanning Trivy will check the projects dependencies against databases for known vulnerabilities of the used version.
 Lets try it out.
 
-Suppose we are considering to use or maybe build upon an open-source tool called [go-git](https://github.com/go-git/go-git). Lets use Trivys vulnerability scanner to check for any known vulnerabilities.
+Suppose we are considering to use or maybe build upon an open-source tool called [go-git](https://github.com/go-git/go-git). Lets use Trivys vulnerability scanner to check for any known vulnerabilities. The default command is `trivy repo url-to-git-repo`.
 
-We could explicitly specify the vulnerability scanner like this: `trivy repo --scanners vuln https://github.com/go-git/go-git`. However, by default, when scanning repositories using `trivy repo url-to-git-repo` it is equivalent to `trivy repo --scanners vuln, secret url-to-git-repo`. So we can just use:
+We could explicitly specify the vulnerability scanner like this: `trivy repo --scanners vuln https://github.com/go-git/go-git`. However, by default, when scanning repositories you use both the vulnerability scanner and the secret scanner (more on secret scanning later). So lets just use the default options.
 
 ```
 trivy repo https://github.com/go-git/go-git
 ```{{exec}}
-
 
 Do you see any vulnerabilities? Since things might have changed only you can tell. 
 
@@ -33,7 +32,7 @@ Here we see that they use a package called gopkg.in/yaml.v2, but their current v
 We can checkout specific tags. Maybe we are using an older version, or are considering to use an older version due to, for example, compatibility issues. 
 
 ```
-trivy repo --tag v.5.4.1 https://github.com/go-git/go-git
+trivy repo --tag v5.4.1 https://github.com/go-git/go-git
 ```{{exec}}
 
 Oh, maybe we should consider upgrading if possible.
