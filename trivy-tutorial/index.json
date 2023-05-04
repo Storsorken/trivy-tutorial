@@ -12,15 +12,15 @@
       },
       {
         "title": "Step 2",
-        "text": "step2-performDockerchecks.md"
-      },
-      {
-        "title": "Step 3",
         "text": "basic-vuln-scanning.md"
       },
       {
-        "title": "Step 4",
+        "title": "Step 3",
         "text": "DockerImageScanning.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "performDockerConfigScanning.md"
       }
     ]
   },
