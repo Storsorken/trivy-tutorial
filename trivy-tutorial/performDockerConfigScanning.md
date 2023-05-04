@@ -2,7 +2,7 @@
 Trivy can be used to scan Dockerfiles, Kubernetes manifests, and Helm charts for container configuration files. This can help in the investigation of security flaws or misconfigurations in the container image build process.
 
 Following command can be used to scan the Dockerfile.
-`trivy config <path-to-dockerfile>`
+ `trivy config <path-to-dockerfile>`
 
 Create a small sample application to build a Docker image for scanning.
 Make a HTML file that will be used to show a static website and package it using Docker.
