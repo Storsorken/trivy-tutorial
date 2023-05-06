@@ -16,10 +16,14 @@
       },
       {
         "title": "Step 3",
-        "text": "DockerImageScanning.md"
+        "text": "private-repo-scanning.md"
       },
       {
         "title": "Step 4",
+        "text": "DockerImageScanning.md"
+      },
+      {
+        "title": "Step 5",
         "text": "performDockerConfigScanning.md"
       }
     ]
