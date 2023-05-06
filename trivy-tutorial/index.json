@@ -33,6 +33,10 @@
       {
         "title": "Step 7",
         "text": "trivy-tutorial/github-actions.md"
+      },
+      {
+        "title": "Step 7",
+        "text": "trivy-odds-and-ends.md"
       }
     ]
   },
