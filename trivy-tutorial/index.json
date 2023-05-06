@@ -25,6 +25,10 @@
       {
         "title": "Step 5",
         "text": "performDockerConfigScanning.md"
+      },
+      {
+        "title": "Step 6",
+        "text": "trivy-tutorial/github-actions.md"
       }
     ]
   },
