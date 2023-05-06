@@ -8,4 +8,9 @@ Trivy is an open source scanning tool that allows you to scan files you might wo
 
 The roadmap for the tutorial is as follows
 
+
+
+![Trivy](https://github.com/Storsorken/Trivy-tutorial/blob/main/trivy-tutorial/img/DevOps-Trivy.png)
+
+
 [insert nice overview picture of the tutorial here]

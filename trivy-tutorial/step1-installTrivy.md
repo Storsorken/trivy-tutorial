@@ -1,6 +1,6 @@
 Installation of Trivy "A Simple and Comprehensive Vulnerability Scanner for Containers and other Artifacts, Suitable for CI" on Ubuntu.
 
-
+# Trivy Installation
 ```
 sudo apt-get -y install wget apt-transport-https gnupg lsb-release
 ```{{exec}}
@@ -11,6 +11,3 @@ echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.
 sudo apt-get update
 sudo apt-get install trivy
 ```{{exec}}
-
-
-![Trivy](https://github.com/Storsorken/Trivy-tutorial/blob/main/trivy-tutorial/img/Trivy-logo.png)
