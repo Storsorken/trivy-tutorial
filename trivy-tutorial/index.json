@@ -19,12 +19,20 @@
         "text": "project-scanning-continued.md"
       },
       {
-        "title": "Step 3",
+        "title": "Step 4",
+        "text": "private-repo-scanning.md"
+      },
+      {
+        "title": "Step 5",
         "text": "DockerImageScanning.md"
       },
       {
-        "title": "Step 4",
+        "title": "Step 6",
         "text": "performDockerConfigScanning.md"
+      },
+      {
+        "title": "Step 7",
+        "text": "trivy-tutorial/github-actions.md"
       }
     ]
   },
