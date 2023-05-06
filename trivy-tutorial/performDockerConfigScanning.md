@@ -4,7 +4,8 @@ Trivy can be used to scan Dockerfiles, Kubernetes manifests, and Helm charts for
 Following command can be used to scan the Dockerfile.
  `trivy config <path-to-dockerfile>`
 
-Create a small sample application to build a Docker image for scanning.
+## Creating sample appliction
+Create a sample application to build a Docker image for scanning.
 Make a HTML file that will be used to show a static website and package it using Docker.
 
 ```
@@ -28,6 +29,7 @@ echo -e "
 " > nginx-image/files/index.html
 ```{{exec}}
 
+## Create and build a Dockerfile
 Create a Dockerfile in the nginx-image folder.
 ```
 echo -e "
@@ -50,11 +52,13 @@ List the available docker images and see if the image is built succesfully.
 docker images
 ```{{exec}}
 
+## Scan Docker image for vulnerabilities
 Perform Trivy image scan on the built image. After scanning you can observe the report.
 ```
 trivy image nginx_trivy:1.0
 ```{{exec}}
 
+## Perform Docker configuration scanning
 Perform the Trivy configuration scanning of Dockerfile.
 This will scan the Dockerfile and its associated base image, and report any vulnerabilities found.
 ```
