@@ -11,3 +11,6 @@ echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.
 sudo apt-get update
 sudo apt-get install trivy
 ```{{exec}}
+
+
+![Trivy](https://github.com/Storsorken/Trivy-tutorial/blob/main/trivy-tutorial/img/Trivy-logo.png)
