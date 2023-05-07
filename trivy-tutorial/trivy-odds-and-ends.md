@@ -6,7 +6,7 @@ There is much more functionality to Trivy than we could cover in this tutorial. 
 
 ```
 trivy help
-```{{exec}
+```{{exec}}
 
 If you are wondering why there is no repo command it is because repo is an alias for the repository command.
 

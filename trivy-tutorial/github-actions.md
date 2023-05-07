@@ -9,7 +9,7 @@ To create a GitHub action you need to define the desired actions in .yml files. 
 This will create the directory structure. The -p flag will create parent directores if they don't exist.
 ```
 mkdir -p .github/workflows
-```{{exec}
+```{{exec}}
 
 ```
 "name: trivy
