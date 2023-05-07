@@ -9,4 +9,4 @@ Trivy is an open source scanning tool that allows you to scan files you might wo
 The roadmap for the tutorial is as follows
 
 
-DevSecOps using Trivy : ![Trivy](./img/DevOps-Trivy.png)
+![Trivy](./img/DevOps-Trivy.png)
