@@ -24,18 +24,22 @@
       },
       {
         "title": "Step 5",
-        "text": "DockerImageScanning.md"
+        "text": "local-file-scanning.md"
       },
       {
         "title": "Step 6",
+        "text": "DockerImageScanning.md"
+      },
+      {
+        "title": "Step 7",
         "text": "performDockerConfigScanning.md"
       },
       {
-        "title": "Step 7",
+        "title": "Step 8",
         "text": "github-actions.md"
       },
       {
-        "title": "Step 7",
+        "title": "Step 9",
         "text": "trivy-odds-and-ends.md"
       }
     ]
