@@ -42,7 +42,10 @@
         "title": "Step 9",
         "text": "trivy-odds-and-ends.md"
       }
-    ]
+    ],
+    "finish": {
+        "text": "finish.md"
+    }
   },
   "backend": {
     "imageid": "ubuntu"
