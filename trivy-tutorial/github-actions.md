@@ -42,6 +42,6 @@ The defined action will trigger either when you open a PR or push to main. It wi
 
 Results could look like this: ![example results when using Trivy in GitHub actions](./img/PRs.png)
 
-![build fail](trivy-tutorial/img/PR-build-fail.png)
+![build fail](./img/PR-build-fail.png)
 
 The defined action is a slightly modified example of one of the provided example templates from Trivy. [Here you can look at many stock templates for different GitHub actions setups for Trivy](https://github.com/aquasecurity/trivy-action)
