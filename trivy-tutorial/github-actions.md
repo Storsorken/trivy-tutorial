@@ -12,7 +12,7 @@ mkdir -p .github/workflows
 ```{{exec}}
 
 ```
-"name: trivy
+echo "name: trivy
 on:
   push:
     branches:
