@@ -1,6 +1,6 @@
 # Using Trivy with GitHub actions
 
-Now that we know some about some of the things you can do with Trivy we might want to integrate it in our development pipelines. Whilst there are multiple different kinds of setups you could do we'll set up a simple integration. We'll use Trivy to scan PR for security issues. 
+Now that we know some about some of the things you can do with Trivy we might want to integrate it in our development pipelines. Whilst there are multiple different kinds of setups you could do we'll set up a simple integration. We'll use Trivy to scan PR for security issues.
 
 ## Setup
 
@@ -38,8 +38,10 @@ jobs:
 
 If you just do this to a repository on GitHub some basic workflow would now be set up. Since it's a bit sketchy to allow user of this tutorial push access to some repository on GitHub the setup is not testable in this tutorial but that would be all you need to do for a very basic setup.
 
-The defined action will trigger either when you open a PR or push to main. It will run a job with two steps. The first just checks out the code so other steps can operate on the repo, the other runs Trivy vulnerability scanner on the repo. `scan-type: 'fs'` makes it scan the repo, as per default it will use a vulnerability and security scanner. `severity: 'CRITICAL,HIGH'` configures the scan so that only vulnerabilities with critical or high severity are reported. `exit-code: 1` defines that if any vulnerabilites are reported the check fail for the commit.
+The defined action will trigger either when you open a PR or push to main. It will run a job with two steps. The first just checks out the code so other steps can operate on the repo, the other runs Trivy vulnerability scanner on the repo. `scan-type: 'fs'` makes it scan the repo, as per default it will use a vulnerability and security scanner. `severity: 'CRITICAL,HIGH'` configures the scan so that only vulnerabilities with critical or high severity are reported. `exit-code: 1` defines that if any vulnerabilities are reported the check fails for the commit.
 
 Results could look like this: ![example results when using Trivy in GitHub actions](./img/PRs.png)
 
-The defined action is a slightly modified example of one of the provided example templates from Trivy. [Here you look at many stock templates from different GitHub actions setups for Trivy](https://github.com/aquasecurity/trivy-action)
+![build fail](trivy-tutorial/img/PR-build-fail.png)
+
+The defined action is a slightly modified example of one of the provided example templates from Trivy. [Here you can look at many stock templates for different GitHub actions setups for Trivy](https://github.com/aquasecurity/trivy-action)
