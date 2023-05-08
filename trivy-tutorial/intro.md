@@ -24,4 +24,4 @@ The intended learning outcomes for this tutorial are:
 
 The roadmap for the tutorial is as follows
 
-![Trivy](./img/Trivy-Tutorial-workflow.png)
+![Trivy](./img/Trivy-Tutorial-workflow.jpeg)
