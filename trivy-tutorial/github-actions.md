@@ -4,7 +4,7 @@ Now that we know some about some of the things you can do with Trivy we might wa
 
 ## Setup
 
-To create a GitHub action you need to define the desired actions in .yml files. This file then needs to be placed under `.github/workflows/`. Lets set that up.
+To create a GitHub action you need to define the desired actions in .yml files. This file then needs to be placed under `.github/workflows/`.  Lets set that up.
 
 This will create the directory structure. The -p flag will create parent directores if they don't exist.
 ```
@@ -36,7 +36,7 @@ jobs:
 " > .github/workflows/trivy.yml
 ```{{exec}}
 
-If you just do this to a repository on GitHub some basic workflow would now be set up. Since it's a bit sketchy to allow user of this tutorial push access to some repository on GitHub the setup is not testable in this tutorial but that would be all you need to do for a very basic setup.
+If you just do this to a repository on GitHub some basic workflow would now be set up. Since it's a bit sketchy to allow user of this tutorial push access to some repository on GitHub the setup is not testable in this tutorial but that would be all you need to do for a very basic setup. One important detail though, the .github/ folder needs to be placed in the root directory of the project.
 
 The defined action will trigger either when you open a PR or push to main. It will run a job with two steps. The first just checks out the code so other steps can operate on the repo, the other runs Trivy vulnerability scanner on the repo. `scan-type: 'fs'` makes it scan the repo, as per default it will use a vulnerability and security scanner. `severity: 'CRITICAL,HIGH'` configures the scan so that only vulnerabilities with critical or high severity are reported. `exit-code: 1` defines that if any vulnerabilities are reported the check fails for the commit.
 
