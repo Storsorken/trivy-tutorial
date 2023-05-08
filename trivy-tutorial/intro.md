@@ -6,6 +6,8 @@ Welcome to this tutorial about the Trivy scanning tool! In this tutorial we will
 
 Trivy is an open source scanning tool that allows you to scan files you might work with as a software engineer. Security is important for DevOps/DevSecOps. Using Trivy you could reduce the risk of introducing vulnerabilities in your applications. Further, when you want to make use of some open source software you could use Trivy to check if it has some known vulnerabilities.
 
+![Trivy](./img/DevOps-Trivy.png)
+
 As of writing this tutorial there are four different kinds of scanners you can use:
 
 1. vulnerability
@@ -22,5 +24,4 @@ The intended learning outcomes for this tutorial are:
 
 The roadmap for the tutorial is as follows
 
-
-![Trivy](./img/DevOps-Trivy.png)
+![Trivy](./img/Trivy-Tutorial-workflow.png)
